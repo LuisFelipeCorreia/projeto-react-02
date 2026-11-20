@@ -1,0 +1,59 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+body { background: #0f172a; color: #f8fafc; }
+
+.navbar { background: #1e293b; border-bottom: 1px solid #334155; position: sticky; top: 0; z-index: 10; }
+.nav-container { max-width: 1020px; margin: 0 auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.brand { color: #fff; text-decoration: none; font-size: 1.25rem; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+.brand span { color: #38bdf8; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: #38bdf8; display: inline-block; }
+
+.nav-links { display: flex; gap: 12px; }
+.nav-links a { color: #cbd5e1; text-decoration: none; font-weight: 600; font-size: 0.9rem; padding: 8px 14px; border-radius: 8px; }
+.nav-links a.ativo { background: #2563eb; color: #fff; }
+
+.container { max-width: 1020px; margin: 0 auto; padding: 32px 20px; }
+.hero { text-align: center; max-width: 680px; margin: 0 auto 32px; }
+.badge { display: inline-block; background: #0284c7; color: #e0f2fe; padding: 4px 12px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; margin-bottom: 12px; }
+.hero h1 { font-size: 2rem; line-height: 1.25; margin-bottom: 10px; }
+.hero p { color: #94a3b8; }
+
+.filtros-box { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
+.filtros-box input { padding: 12px 14px; border-radius: 10px; border: 1px solid #334155; background: #1e293b; color: #fff; font-size: 0.95rem; }
+.chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.chips button { background: #1e293b; color: #cbd5e1; border: 1px solid #334155; padding: 8px 14px; border-radius: 8px; cursor: pointer; font-weight: 600; }
+.chips button.ativo { background: #0284c7; color: #fff; border-color: #0284c7; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 18px; }
+.card { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 12px; }
+.card-top { display: flex; justify-content: space-between; align-items: center; }
+.cat { color: #38bdf8; font-size: 0.8rem; font-weight: 700; }
+.inscrito-tag { background: #14532d; color: #86efac; font-size: 0.75rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; }
+.protocolo { color: #facc15; font-size: 0.8rem; font-weight: 700; }
+.card h2 { font-size: 1.15rem; line-height: 1.35; }
+.meta { color: #94a3b8; font-size: 0.88rem; }
+
+.btn-detalhes, .btn-primario { display: inline-block; text-align: center; background: #2563eb; color: #fff; text-decoration: none; border: none; padding: 11px 16px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 0.92rem; }
+.btn-detalhes:hover, .btn-primario:hover { background: #1d4ed8; }
+.btn-cancelar { background: #dc2626; color: #fff; border: none; padding: 10px; border-radius: 8px; font-weight: 600; cursor: pointer; }
+
+.voltar { display: inline-block; color: #38bdf8; text-decoration: none; font-weight: 600; margin-bottom: 20px; }
+.detalhes-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: start; }
+.detalhes-info { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 24px; }
+.detalhes-info h1 { font-size: 1.7rem; margin: 8px 0 14px; }
+.descricao { color: #cbd5e1; line-height: 1.6; margin-bottom: 20px; }
+.lista-info { list-style: none; display: flex; flex-direction: column; gap: 10px; color: #cbd5e1; font-size: 0.95rem; }
+
+.form-box { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 24px; }
+.form-box h2 { font-size: 1.2rem; margin-bottom: 16px; }
+.form-box form { display: flex; flex-direction: column; gap: 14px; }
+.form-box label { display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; color: #cbd5e1; }
+.form-box input { padding: 10px 12px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #fff; }
+.aviso-inscrito { display: flex; flex-direction: column; gap: 12px; color: #86efac; }
+
+.pagina-header { margin-bottom: 24px; }
+.pagina-header p { color: #94a3b8; margin-top: 4px; }
+.vazio-box, .centro { text-align: center; background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 36px 20px; display: flex; flex-direction: column; align-items: center; gap: 14px; }
+
+@media (max-width: 768px) {
+  .detalhes-grid { grid-template-columns: 1fr; }
+}
